@@ -128,15 +128,25 @@
             height: 240px;
             border-radius: 50%;
             object-fit: cover;
+            object-position: center 20%;
             border: 4px solid #540A0E;
             box-shadow: 0 8px 16px rgba(84, 10, 14, 0.2);
             margin-bottom: 1rem;
+        }
+
+        /* Specific adjustment for Arpit Shah's image */
+        .board-member-card:nth-child(4) .board-member-img {
+            object-position: center 15%;
         }
 
         @media (max-width: 768px) {
             .board-member-img {
                 width: 180px;
                 height: 180px;
+            }
+            
+            .board-member-card:nth-child(4) .board-member-img {
+                object-position: center 15%;
             }
             
             .team-card img {
@@ -802,7 +812,8 @@
                     <div class="board-member-card text-center" data-aos="fade-up" data-aos-delay="400">
                         <img src="images/board-member/DSC00204 (1).jpg" 
                              alt="Arpit Shah" 
-                             class="board-member-img mx-auto">
+                             class="board-member-img mx-auto"
+                             style="object-position: center 15%;">
                         <h3 class="board-member-name">ARPIT SHAH</h3>
                         <p class="board-member-title">Regional Advisor</p>
                     </div>
